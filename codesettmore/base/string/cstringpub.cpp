@@ -40,7 +40,7 @@ string CStringPub::replace(string subject, const string& search,const string& re
     return subject;
 }
 
-void CStringPub::printlgenth(string str)
+void CStringPub::printlength(string str)
 {
     tcoutever << str.length() << endl;
 }
@@ -50,7 +50,7 @@ WORD32 CStringPub::length(string str)
     return str.length();
 }
 
-void CStringPub::printlgenth(string tips, string str)
+void CStringPub::printlength(string tips, string str)
 {
     tcoutever << tips << "[str]" << str.length() << endl;
     tcoutever << tips << "[msg]" << str.length()/2 << endl;

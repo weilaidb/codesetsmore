@@ -8,11 +8,12 @@ class AnCVectorExtPub: public Test {
 public:
     CVectorExtPub<int> actor;
 //    vector<int> vecempty;
-//    vector<int> *pvectest;
+    vector<int> *pvectest;
 
     void SetUp() override
     {
 //        int dwLp = 10;
+//        actor.newVec();
 //        pvectest = actor.newVec();
 //        pvectest->push_back(dwLp++);
 //        pvectest->push_back(dwLp++);
@@ -27,6 +28,15 @@ public:
 //        delete pvectest;
     }
 };
+
+TEST(AnCVectorExtPub, Eg1) {
+//    CVectorExtPub<int> actor;
+//    vector<int> vecempty;
+//    vecempty.clear();
+//    actor.isEmpty(vecempty);
+
+//    ASSERT_THAT(actor.isEmpty(vecempty), Eq(true));
+}
 
 
 TEST_F(AnCVectorExtPub, printVecReturnSize) {
