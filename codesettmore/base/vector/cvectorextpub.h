@@ -15,14 +15,37 @@ class CVectorExtPub
 public:
     CVectorExtPub(){};
 
-//    static vector<T> *newVec();
-//    static WORD32 printVec(vector<int> &vec);
-//    static WORD32 printVecReverse(vector<int> &vec);
+    vector<T> *newVec()
+    {
+        return new vector<T>();
+    }
+
+    WORD32 printVec(vector<T> &vec)
+    {
+        int i = 0;
+        for(auto it = vec.begin(); it != vec.end(); it++)
+        {
+            ++i;
+            cout << "No:" << setw(3)  << i << ", "<< *it << endl;
+        }
+        return vec.size();
+    }
+
+    WORD32 printVecReverse(vector<T> &vec)
+    {
+        int i = 0;
+        for(auto it = vec.rbegin(); it != vec.rend(); it++)
+        {
+            ++i;
+            cout << "No:" << setw(3)  << i << ", "<< *it << endl;
+        }
+        return vec.size();
+    }
+
     bool isEmpty(vector<T> &vec)
     {
         return 0 == vec.size();
     }
-
 
     bool isFull(vector<T> &vec)
     {
