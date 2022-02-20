@@ -6,15 +6,18 @@ CONFIG -= qt
 SOURCES += \
         base/define/cdefinepub.cpp \
         base/string/cstringpub.cpp \
+        base/vector/cvectorextpub.cpp \
         base/vector/cvectorpub.cpp \
         main.cpp \
         test/cstringpubtest.cpp \
+        test/cvectorextpubtest.cpp \
         test/cvectorpubtest.cpp \
         testmain.cpp
 
 HEADERS += \
     base/define/cdefinepub.h \
     base/string/cstringpub.h \
+    base/vector/cvectorextpub.h \
     base/vector/cvectorpub.h \
     test/cstringpubtest.h
 
