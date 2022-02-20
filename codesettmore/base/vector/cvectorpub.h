@@ -12,12 +12,15 @@ class CVectorPub
 {
 public:
     CVectorPub();
+    static vector<int> *newVec();
     static WORD32 printVec(vector<int> &vec);
     static WORD32 printVecReverse(vector<int> &vec);
     static bool isEmpty(vector<int> &vec);
     static bool isFull(vector<int> &vec);
     static WORD32 info(vector<int> &vec);
-    static vector<int> *newVec();
+    static WORD32 size(vector<int> &vec);
+    static WORD32 capacity(vector<int> &vec);
+    static WORD32 max_size(vector<int> &vec);
 };
 
 #endif // CVECTORPUB_H

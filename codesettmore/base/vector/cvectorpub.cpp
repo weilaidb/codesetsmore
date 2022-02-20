@@ -48,6 +48,21 @@ WORD32 CVectorPub::info(vector<int> &vec)
     return 0;
 }
 
+WORD32 CVectorPub::size(vector<int> &vec)
+{
+    return vec.size();
+}
+
+WORD32 CVectorPub::capacity(vector<int> &vec)
+{
+    return vec.capacity();
+}
+
+WORD32 CVectorPub::max_size(vector<int> &vec)
+{
+    return vec.max_size();
+}
+
 vector<int> *CVectorPub::newVec()
 {
     return new vector<int>();

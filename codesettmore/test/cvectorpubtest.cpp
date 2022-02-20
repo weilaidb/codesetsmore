@@ -41,6 +41,10 @@ TEST_F(AnCVectorPub, printVecReturnSize) {
 
 TEST_F(AnCVectorPub, SomeInfo) {
     ASSERT_THAT(actor.info(vecempty), Eq(0));
+    ASSERT_THAT(actor.info(*pvectest), Eq(0));
+    ASSERT_THAT(actor.size(*pvectest), Eq(5));
+    ASSERT_THAT(actor.capacity(*pvectest), Ge(5));
+    ASSERT_THAT(actor.max_size(*pvectest), Ge(5));
 }
 
 
