@@ -26,6 +26,8 @@ int main()
 
     actorext.isEmpty(empty);
     actorext.isEmpty(empty);
+    actorext.isFull(empty);
+//    CVectorExtPub<int>::isFull(empty);
 
     int i = 0;
     for(auto it = empty.begin(); it != empty.end(); it++)

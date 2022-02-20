@@ -24,7 +24,10 @@ public:
     }
 
 
-//    static bool isFull(vector<int> &vec);
+    bool isFull(vector<T> &vec)
+    {
+        return vec.size() > 0;
+    }
 //    static WORD32 info(vector<int> &vec);
 //    static WORD32 size(vector<int> &vec);
 //    static WORD32 capacity(vector<int> &vec);

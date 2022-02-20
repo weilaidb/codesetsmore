@@ -28,3 +28,9 @@
 //{
 //    return 0 == vec.size();
 //}
+
+//template<typename T>
+//bool CVectorExtPub<T>::isFull(vector<T> &vec)
+//{
+//    return vec.size() > 0;
+//}
