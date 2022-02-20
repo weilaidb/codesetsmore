@@ -6,18 +6,22 @@ CONFIG -= qt
 SOURCES += \
         base/define/cdefinepub.cpp \
         base/string/cstringpub.cpp \
+        base/vector/cvectorpub.cpp \
         main.cpp \
         test/cstringpubtest.cpp \
+        test/cvectorpubtest.cpp \
         testmain.cpp
 
 HEADERS += \
     base/define/cdefinepub.h \
     base/string/cstringpub.h \
+    base/vector/cvectorpub.h \
     test/cstringpubtest.h
 
 INCLUDEPATH +=  \
                base/define/ \
                base/string/ \
+               base/vector/ \
 
 
 

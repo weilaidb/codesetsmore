@@ -24,8 +24,8 @@ string CStringPub::input()
         strinput += buf;
         memset(buf,0,sizeof(buf));
     }
-    tcoutever << "strinput e:" << strinput << endl;
-    tcoutever << "strinput.length():" << strinput.length() << endl;
+    tcout << "strinput e:" << strinput << endl;
+    tcout << "strinput.length():" << strinput.length() << endl;
 
     return strinput;
 }
