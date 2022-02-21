@@ -32,16 +32,16 @@ public:
 TEST_F(AnCVectorPub, printVecReturnSize) {
     vector<int> vectest;
     ASSERT_THAT(actor.isEmpty(vecempty), Eq(true));
-    ASSERT_THAT(actor.printVec(*pvectest), Eq(5));
-    ASSERT_THAT(actor.printVecReverse(*pvectest), Eq(5));
+//    ASSERT_THAT(actor.printVec(*pvectest), Eq(5));
+//    ASSERT_THAT(actor.printVecReverse(*pvectest), Eq(5));
     ASSERT_THAT(actor.isFull(*pvectest), Eq(true));
 }
 
 
 
 TEST_F(AnCVectorPub, SomeInfo) {
-    ASSERT_THAT(actor.info(vecempty), Eq(0));
-    ASSERT_THAT(actor.info(*pvectest), Eq(0));
+//    ASSERT_THAT(actor.info(vecempty), Eq(0));
+//    ASSERT_THAT(actor.info(*pvectest), Eq(0));
     ASSERT_THAT(actor.size(*pvectest), Eq(5));
     ASSERT_THAT(actor.capacity(*pvectest), Ge(5));
     ASSERT_THAT(actor.max_size(*pvectest), Ge(5));
