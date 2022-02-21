@@ -18,7 +18,7 @@ public:
         pvectest->push_back(fLp++);
         pvectest->push_back(fLp++);
         pvectest->push_back(fLp++);
-        pvectest->push_back(fLp++);
+        actor.push(*pvectest, 100.3);
     }
 
     void TearDown() override

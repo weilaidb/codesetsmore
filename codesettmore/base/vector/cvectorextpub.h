@@ -20,6 +20,7 @@ public:
     WORD32 printVecReverse(vector<T> &vec);
     bool isEmpty(vector<T> &vec);
     bool isFull(vector<T> &vec);
+    void push(vector<T> &vec, T val);
     WORD32 info(vector<T> &vec);
     WORD32 size(vector<T> &vec);
     WORD32 capacity(vector<T> &vec);
@@ -95,5 +96,12 @@ WORD32 CVectorExtPub<T>::max_size(vector<T> &vec)
 {
     return vec.max_size();
 }
+
+template<typename T>
+void CVectorExtPub<T>::push(vector<T> &vec, T val)
+{
+    vec.push_back(val);
+}
+
 
 #endif // CVECTOREXTPUB_H
