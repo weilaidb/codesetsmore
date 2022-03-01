@@ -16,7 +16,7 @@ string CStringPub::input()
 
     while (cin.getline(buf, sizeof(buf)))
     {
-        tcout << "buf:" << buf << endl;
+        tout << "buf:" << buf << endl;
         if(buf[0] == '\0')
         {
             break;
@@ -24,8 +24,8 @@ string CStringPub::input()
         strinput += buf;
         memset(buf,0,sizeof(buf));
     }
-    tcout << "strinput e:" << strinput << endl;
-    tcout << "strinput.length():" << strinput.length() << endl;
+    tout << "strinput e:" << strinput << endl;
+    tout << "strinput.length():" << strinput.length() << endl;
 
     return strinput;
 }
@@ -42,7 +42,7 @@ string CStringPub::replace(string subject, const string& search,const string& re
 
 void CStringPub::printlength(string str)
 {
-    tcoutever << str.length() << endl;
+    toutever << str.length() << endl;
 }
 
 WORD32 CStringPub::length(string str)
@@ -52,8 +52,8 @@ WORD32 CStringPub::length(string str)
 
 void CStringPub::printlength(string tips, string str)
 {
-    tcoutever << tips << "[str]" << str.length() << endl;
-    tcoutever << tips << "[msg]" << str.length()/2 << endl;
+    toutever << tips << "[str]" << str.length() << endl;
+    toutever << tips << "[msg]" << str.length()/2 << endl;
 }
 
 WORD32 CStringPub::findpos(string s, string findstr, vector<int> &vecpos)

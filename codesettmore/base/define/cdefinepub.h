@@ -4,13 +4,13 @@
 
 //#define TRACE
 #ifndef TRACE
- #define tcout 0 && cout//或者NULL && cout
+ #define tout 0 && cout//或者NULL && cout
 #else
- #define tcout cout
+ #define tout cout
 #endif
 
 //永久打印
-#define tcoutever cout
+#define toutever cout
 
 
 
