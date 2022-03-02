@@ -7,10 +7,12 @@ DEFINES +=TESTGMOCK
 
 SOURCES += \
         base/define/cdefinepub.cpp \
+        base/map/cmappub.cpp \
         base/string/cstringpub.cpp \
         base/vector/cvectorextpub.cpp \
         base/vector/cvectorpub.cpp \
         main.cpp \
+        test/cmappubtest.cpp \
         test/cstringpubtest.cpp \
         test/cvectorextpubtest.cpp \
         test/cvectorpubtest.cpp \
@@ -18,6 +20,7 @@ SOURCES += \
 
 HEADERS += \
     base/define/cdefinepub.h \
+    base/map/cmappub.h \
     base/string/cstringpub.h \
     base/vector/cvectorextpub.h \
     base/vector/cvectorpub.h \
@@ -27,6 +30,7 @@ INCLUDEPATH +=  \
                base/define/ \
                base/string/ \
                base/vector/ \
+               base/map/ \
 
 
 
