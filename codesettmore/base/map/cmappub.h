@@ -20,8 +20,10 @@ public:
     CMapPub();
 
     void insert(int key, string value);
+    string remove(int key);
     void print();
     void printR();
+    void clear();
     string find(int key);
     WORD32 size();
 private:
