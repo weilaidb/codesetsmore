@@ -20,7 +20,7 @@ public:
     CMapPub();
 
     void insert(int key, string value);
-    string remove(int key);
+    WORD32 remove(int key);
     void print();
     void printR();
     void clear();

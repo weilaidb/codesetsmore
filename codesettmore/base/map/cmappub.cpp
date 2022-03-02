@@ -16,16 +16,16 @@ void CMapPub::insert(int key, string value)
     mapEntry.insert(pair < int,string > (key,value));
 }
 
-string CMapPub::remove(int key)
+WORD32 CMapPub::remove(int key)
 {
     MAP_INI_STRING_ITER l_it;
     l_it = mapEntry.find(key);
-    if(l_it == mapEntry.end())
-        return "";
-    else
+    if(l_it != mapEntry.end())
+    {
         mapEntry.erase(l_it);
+    }
 
-    return "";
+    return 0;
 }
 
 void CMapPub::print()
