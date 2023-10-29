@@ -21,6 +21,7 @@ public:
     static WORD32 size(vector<int> &vec);
     static WORD32 capacity(vector<int> &vec);
     static WORD32 max_size(vector<int> &vec);
+    static WORD32 clear(vector<int> &vec);
 };
 
 #endif // CVECTORPUB_H

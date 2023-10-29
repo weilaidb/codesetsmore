@@ -67,3 +67,12 @@ vector<int> *CVectorPub::newVec()
 {
     return new vector<int>();
 }
+
+WORD32 CVectorPub::clear(vector<int> &vec)
+{
+    vec.clear();
+    vector<int> temp;
+    temp.swap(vec);
+
+    return 0;
+}

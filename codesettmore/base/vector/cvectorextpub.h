@@ -13,7 +13,7 @@ template <typename T>
 class CVectorExtPub
 {
 public:
-    CVectorExtPub(){};
+    CVectorExtPub() {};
 
     vector<T> *newVec();
     WORD32 printVec(vector<T> &vec);
@@ -25,6 +25,7 @@ public:
     WORD32 size(vector<T> &vec);
     WORD32 capacity(vector<T> &vec);
     WORD32 max_size(vector<T> &vec);
+    WORD32 clear(vector<T> &vec);
 };
 
 template<typename T>
@@ -103,5 +104,14 @@ void CVectorExtPub<T>::push(vector<T> &vec, T val)
     vec.push_back(val);
 }
 
+template<typename T>
+WORD32 CVectorExtPub::clear(vector<T> &vec)
+{
+    vec.clear();
+    vector<T> temp;
+    temp.swap(vec);
+
+    return 0;
+}
 
 #endif // CVECTOREXTPUB_H
